@@ -10,7 +10,7 @@ import Link from "next/link"
 import { formatDate } from "@/lib/datetime"
 import articleStyles from "@/styles/blog-article.module.css"
 
-export default function BlogPost({ frontMatter, slug, content, readingTimeMinutes, wordCount }) {
+export default function BlogPost({ frontMatter, slug, content, readingTimeMinutes, wordCount }: any) {
   return (
     <RootLayout title={`${frontMatter.title} | Jesse`}>
       <main className="m-3">
