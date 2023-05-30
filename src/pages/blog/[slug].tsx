@@ -51,7 +51,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({params: {slug}}) {
+export async function getStaticProps({params: {slug}}: any) {
   const directoryPath = path.join("src", "posts")
   const markdown = fs.readFileSync(path.join(directoryPath, slug + ".md"))
 

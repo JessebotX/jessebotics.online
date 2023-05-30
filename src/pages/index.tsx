@@ -16,7 +16,7 @@ export default function Home() {
               *** 👋 Hello, world! ***
             </section>
             <article className="my-2">
-              I'm a computer science student passionate about software development, whether it involves games, web, desktop or mobile applications. My programming journey started 6 years ago experimenting with ROBLOX Studio and creating video game mods for Stardew Valley.
+              I&apos;m a computer science student passionate about software development, whether it involves games, web, desktop or mobile applications. My programming journey started 6 years ago experimenting with ROBLOX Studio and creating video game mods for Stardew Valley.
             </article>
 
             <h2 className=" text-xl mt-7 font-bold" id="pages-on-jessebotics-online">

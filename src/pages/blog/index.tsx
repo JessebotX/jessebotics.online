@@ -19,7 +19,7 @@ export default function Blog({ posts }: any) {
               <p>{posts.length} entries</p>
             </article>
             <ul className="list-none m-0">
-              {posts.map(({ slug, frontMatter }) => (
+              {posts.map(({ slug, frontMatter }: any) => (
                 <li key={slug}>
                   <Link href={`/blog/${slug}`} className="flex hover:no-underline hover:bg-black/10 p-1">
                     <span className="font-bold text-blue-800">{formatDate(frontMatter.date)}</span>
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       frontMatter
     }
   }).sort((a, b) => {
-    new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime()
+    return new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime()
   }).reverse()
 
   return {
