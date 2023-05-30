@@ -8,6 +8,7 @@ import Navbar from "@/components/navbar"
 import { marked } from "marked"
 import Link from "next/link"
 import { formatDate } from "@/lib/datetime"
+import articleStyles from "@/styles/blog-article.module.css"
 
 export default function BlogPost({ frontMatter, slug, content, readingTimeMinutes, wordCount }) {
   return (
@@ -23,9 +24,9 @@ export default function BlogPost({ frontMatter, slug, content, readingTimeMinute
             <section className="mt-8">
               <article className="mb-4">
                 <h1 className="text-2xl text-center font-bold">{frontMatter.title}</h1>
-                <p className="text-center">by Jesse Huang</p>
+                <p className="text-center">by {frontMatter.author}</p>
               </article>
-              <article className="post-contents" dangerouslySetInnerHTML={{__html: marked(content)}} />
+              <article className={articleStyles.postcontent} dangerouslySetInnerHTML={{__html: marked(content)}} />
             </section>
           </Prompt>
         </section>
