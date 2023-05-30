@@ -1,13 +1,13 @@
 # jessebotics.online
 
+**NOTE: This is the new iteration of the jessebotics.online
+website. To see the old version, check out
+<https://github.com/JessebotX/jessebotics.online-old>**
+
 My personal static website made with Next.js, React,
 TypeScript and Tailwind CSS.
 
 It can be viewed at <https://jessebotics.online>.
-
-**NOTE: This is the new iteration of the jessebotics.online
-website. To see the old version, check out
-<https://github.com/JessebotX/jessebotics.online-old>**
 
 ## Getting Started
 
