@@ -40,33 +40,39 @@ export default function Home() {
                 </div>
                 <div className='p-10 px-14 border-x-2 border-b-2 border-dashed hover:border-solid text-center'>
                     <p className={`${majorMono.className} mb-3 font-bold text-lg`}>👋 hello!</p>
-                    <p>I'm a computer science student interested in developing a wide range of software, whether it involves games, web, desktop or mobile applications.</p>
+                    <p>
+                        I'm a computer science student interested in developing
+                        a wide range of software, whether it involves games,
+                        web, desktop or mobile applications.
+                    </p>
                 </div>
             </div>
 
-            <section className='mt-8'>
+            <section className='mt-8 mx-3'>
                 <h2 className={`${majorMono.className} text-3xl`}>pRojects</h2>
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 grid-auto-rows-fr'>
                     <a href="https://github.com/JessebotX/bookgen"
                         class='block p-7 rounded-md border-2 transition-all
                             hover:bg-slate-800 child:hover:text-slate-100 hover:scale-110'>
-                        <h3 className='font-bold text-lg text-blue-600 border-dotted border-b-2'>
-                            Bookgen
+                        <h3 className={`${majorMono.className} font-bold text-lg text-blue-600 border-dotted border-b-2`}>
+                            BOOKGEN
                         </h3>
                         <em className={`${victorMono.className} text-xs my-3 ml-6 block`}>Go, HTML, CSS, JavaScript, Sass</em>
                         <p className='text-md'>
                             Turn a collection of Markdown-based books into a static website with RSS feeds and EPUB download.
                         </p>
                     </a>
-                    <a href="https://github.com/JessebotX/bookgen"
+                    <a href="https://github.com/JessebotX/StardewValleyMods"
                         class='block p-7 rounded-md border-2 transition-all
                             hover:bg-slate-800 child:hover:text-slate-100 hover:scale-110'>
-                        <h3 className='font-bold text-lg text-blue-600 border-dotted border-b-2'>
-                            Bookgen
+                        <h3 className={`${majorMono.className} font-bold text-lg text-blue-600 border-dotted border-b-2`}>
+                            STARDEW VALLEY MODS
                         </h3>
-                        <em className={`${victorMono.className} text-xs my-3 ml-6 block`}>Go, HTML, CSS, JavaScript, Sass</em>
+                        <em className={`${victorMono.className} text-xs my-3 ml-6 block`}>C#, Stardew Modding API</em>
                         <p className='text-md'>
-                            Turn a collection of Markdown-based books into a static website with RSS feeds and EPUB download.
+                            A monorepo of a collection of Stardew Valley mods
+                            (15 content packs, 7 C# SMAPI mods) with a total of over
+                            180,000 unique downloads.
                         </p>
                     </a>
                 </div>
