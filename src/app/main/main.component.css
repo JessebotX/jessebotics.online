@@ -1,0 +1,29 @@
+main {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.content {
+  max-width: min(25rem, 98%);
+}
+
+.item {
+  white-space: nowrap;
+}
+
+.about {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-left: 0.125rem solid red;
+  color: #333;
+}
